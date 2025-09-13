@@ -5,7 +5,7 @@ from utils import get_cifar10_data
 
 # Load data dan model
 (_, _), (x_test, y_test) = get_cifar10_data()
-model = load_model('checkpoints/final_model.h5')
+model = load_model('checkpoints/best_model.h5')
 
 # Prediksi 25 gambar pertama
 probs = model.predict(x_test[:25])
